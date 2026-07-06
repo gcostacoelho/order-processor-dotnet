@@ -56,5 +56,8 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 
-#
+# Settings
 appsettings.Development.json
+
+# VS Code directories
+.vscode/
