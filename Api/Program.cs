@@ -3,6 +3,7 @@ using Api.src.Configs;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.RegisterDatabaseConnection(builder.Configuration);
 builder.Services.RegisterServices();
 builder.Services.RegisterRepositories();
 builder.Services.RegisterSingletons(builder.Configuration);
